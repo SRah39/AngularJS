@@ -1,8 +1,19 @@
 <h1>Result</h1>
 <div ng-if="list.isEmpty()">Nothing found</div>
-<ul>
-  <li ng-repeat="item in list.found">
-    {{item.name}}, {{item.short_name}}, {{item.description}}
-    <button type="button" class="btn btn-primary btn-sm" ng-click="list.onRemove({index: $index});">Don't want this one!</button>
-  </li>
-</ul>
+<table class="table table-striped" >
+	<thead>
+      <tr ng-show="list.found.length >= 1">
+        <th>Name</th>
+        <th>Short name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="item in list.found">
+        <td>{{item.name}}</td>
+        <td>{{item.short_name}}</td>
+        <td>{{item.description}}</td>
+        <td><button type="button" class="btn btn-primary btn-sm" ng-click="list.onRemove({index: $index});">Don't want this one!</button></td>
+      </tr>
+    </tbody>
+</table>
