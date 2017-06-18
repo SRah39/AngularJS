@@ -1,0 +1,14 @@
+<h3>Click on a menu to see category options</h3>
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item"><a ui-sref="home">Home</a></li>
+  <li class="breadcrumb-item active">Categories</li>
+</ol>
+
+<ul class="nav nav-pills nav-stacked">
+  <li ng-repeat="item in $ctrl.items">
+    <a ui-sref="items({category: item.short_name})" class="no-decoration">
+    	<button type="button" class="btn btn-warning btn-md btn-block">{{item.name}}</button>
+    </a>
+  </li>
+</ul>

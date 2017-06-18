@@ -1,0 +1,53 @@
+h1, h3 {
+	text-align: center;
+}
+
+.btn {
+	color: darkblue;
+}
+
+.btn:hover {
+	background: rgba(0,0,0,0);
+	color: darkblue;
+	border: 2px solid darkblue;
+}
+
+.btn, .breadcrumb, .list-group-item {
+	border-radius: 0px;
+	padding: 10px 50px;
+	font-size: 12pt;
+}
+
+.main-btn {
+	display: block;
+	margin: 3% auto;
+	padding: 10px 50px;
+}
+
+@media screen and (min-width: 768px) {
+	.nav-stacked>li {
+		width: 50%;
+		display: inline-block;
+	}
+}
+
+a.no-decoration {
+	text-decoration: none;
+}
+
+@media screen and (min-width: 992px) {
+	.list-group-item {
+		display: inline-block;
+		width: 44%;
+	}
+}
+.list-group-item {
+	margin: 10px 3%;
+	text-align: center;
+}
+.list-group-item:nth-child(even) {
+	background: #87CEFA;
+}
+.list-group-item:nth-child(odd) {
+	background: #B0C4DE;
+}
