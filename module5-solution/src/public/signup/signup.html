@@ -1,7 +1,12 @@
 <div class="container">
   <h3 class="text-center">Sign Up</h3>
 
-  <div ng-if="signUpCtrl.submitted">Your information has been saved</div>
+  <div ></div>
+
+  <div ng-if="signUpCtrl.submitted" class="alert alert-success alert-dismissable">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+    <strong>Success!</strong> Your information has been saved.
+  </div>
 
   <form name="signUpForm" novalidate>
   <div class="form-group">
