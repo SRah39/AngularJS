@@ -7,18 +7,33 @@
     </a>
   </div>
 
-  <div ng-if="myInfoCtrl.info">
-    <div>
-    First name: {{myInfoCtrl.info.firstName}} <br />
-    Last name: {{myInfoCtrl.info.lastName}} <br />
-    Email address: {{myInfoCtrl.info.email}} <br />
-    Phone number: {{myInfoCtrl.info.phone}} <br />
-  </div>
-  <div>
-    <h2 class="text-center">Favorite</h2>
-  <menu-item
-             menu-item="myInfoCtrl.menuItem">
-  </menu-item>
-</div>
+  <div ng-if="myInfoCtrl.info" class="table-responsive">
+    <table class="table table-striped">
+      <tr>
+        <td>First name:</td> 
+        <td>{{myInfoCtrl.info.firstName}}</td> 
+      </tr>
+
+      <tr>
+        <td>Last name:</td>
+        <td>{{myInfoCtrl.info.lastName}}</td>
+      </tr>
+
+      <tr>
+        <td>Email address:</td>
+        <td>{{myInfoCtrl.info.email}}</td>
+      </tr>
+
+      <tr>
+        <td>Phone number: {{myInfoCtrl.info.phone}} </td>
+      </tr>
+
+      <tr>
+        <td>Favorite Dish: </td>
+        <td>
+          <menu-item menu-item="myInfoCtrl.menuItem"></menu-item>
+        </td>
+      </tr>
+    </table>
   </div>
 </div>
