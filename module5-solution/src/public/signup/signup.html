@@ -44,7 +44,7 @@
   </div>
   <div class="form-group">
     <label for="favorite">Favorite dish</label>
-    <input type="text" class="form-control" name="favorite" placeholder="Favorite dish" ng-model="signUpCtrl.info.favorite"
+    <input type="text" class="form-control" name="favorite" placeholder="Favorite dish (i.e., A2, C2)" required ng-model="signUpCtrl.info.favorite"
       ng-blur="signUpCtrl.validateFavorite()">
     <span ng-if="signUpCtrl.invalidFavorite">
             No such menu number exists
