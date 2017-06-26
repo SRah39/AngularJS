@@ -6,6 +6,10 @@
   <div ng-if="signUpCtrl.submitted" class="alert alert-success alert-dismissable">
     <span class="close" data-dismiss="alert" aria-label="close">×</span>
     <strong>Success!</strong> Your information has been saved.
+
+    <a ui-sref="public.myinfo">
+      <button type="button" class="btn btn-success">See Save Info Now!</button>
+    </a>
   </div>
 
   <form name="signUpForm" novalidate>
